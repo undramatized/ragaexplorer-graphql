@@ -43,7 +43,8 @@ const server = new ApolloServer({
   resolvers,
   dataSources: () => ({
     ragaAPI: new RagaAPI(),
-  })
+  }),
+  introspection: true
  });
 
 // This `listen` method launches a web-server.  Existing apps
